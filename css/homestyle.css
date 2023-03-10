@@ -127,7 +127,6 @@ a {
   flex-direction: column;
 }
 
-
 /*Outros Tamanhos*/
 /* cards */
 @media screen and (min-width: 880px) {
@@ -151,16 +150,16 @@ a {
     align-items: end;
     flex-direction: row;
   }
-
 }
 
 @media screen and (min-width: 1080px) {
   .blursection {
-    width: 1050px;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* width: 1050px;
     margin: auto;
     margin-bottom: 4vw;
-    margin-top: 4vw;
+    margin-top: 4vw; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
   }
 
   .container {
@@ -169,7 +168,4 @@ a {
     flex-direction: row;
     justify-content: space-around;
   }
-
-
-
 }
