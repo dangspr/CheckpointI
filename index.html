@@ -59,49 +59,52 @@
 
       </div>
     </section>
-
-    <div class="blocoform">
+    <form class="blocoform" id="charForm"> 
+  
       <div class="close-btn">&times;</div>
       <div class="form">
         <h2>Adicionar Campeão</h2>
         <div class="form-element">
-          <label for="nick">Nickname</label>
-          <input type="text" id="text" placeholder="Digite seu Nickname" />
+          <label for="nickname">Nickname</label>
+          <input type="text" id="nick" placeholder="Digite seu Nickname" />
         </div>
         <div class="form-element">
-          <label for="champiom">Campeão</label>
-          <select name="champiom" id="champiom" >
+          <label for="champion">Campeão</label>
+          <select name="champion" id="champion" >
+            <option value="vazio"></option>
               <option value="Akali">Akali</option>
-              <option value="amumu">Amumu</option>
+              <option value="Amumu">Amumu</option>
               <option value="Garen">Garen</option>
-              <option value="Lee">Lee Sin</option>
-              <option value="shaco">Shaco</option>
-              <option value="miss">Miss Fortune</option>     
+              <option value="Lee Sin">Lee Sin</option>
+              <option value="Shaco">Shaco</option>
+              <option value="Miss">Miss Fortune</option>     
                 </select>
         </div>
         <div class="form-element">
           <label for="lane">Lane</label>
           <select name="lane" id="lane">
-              <option value="bot">Bot Lane</option>
-              <option value="mid">Mid Lane</option>
-              <option value="jungle">Jungle</option>
-              <option value="top">Top Lane</option>     
+            <option value="vazio"></option>
+              <option value="Bot Lane">Bot Lane</option>
+              <option value="Mid Lane">Mid Lane</option>
+              <option value="Jungle">Jungle</option>
+              <option value="Top Lane">Top Lane</option>     
           </select>
         </div>
         <div class="form-element">
-          <button>Adicionar Campeão</button>
+          <button type="submit" id="registerBtn">Adicionar Campeão</button>
         </div>
         <div class="form-element">
           <a href="https://www.leagueoflegends.com/pt-br/champions/">Mais perdido que Lee Sin em tiroteio?</a>
         </div>
       </div>
-    </div>
-
+ 
+  </form>
     <section class="blursection">
 
-      
+      <div class="containerRef" id="content">
 
-      <div class="card" id="cards">
+      </div> 
+      <!-- <div class="card" id="cards">
         <img src="img/Garen.jpg" alt="">
         <div class="descricao">
           <h2>Garen</h2>
@@ -184,9 +187,9 @@
               Abrir
             </button>
           </a>
-        </div>
-      </div>
-      <div id="blursection"></div>
+        </div>-->
+      
+     
     </section>
   </main>
 
@@ -272,6 +275,7 @@
 
 
   </script>
+  <script src="js/script.js" type="module"></script>
 </body>
 
 </html>
